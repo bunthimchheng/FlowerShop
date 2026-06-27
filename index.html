@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>FlowerShop</title>
+  </head>
+  <body class="bg-stone-50 font-thin">
+        <!--Navbar-->
+        <div class="flex justify-between py-3 px-30 border-b border-green-700 items-center cursor-pointer">
+            <!--Logo-->
+            <div>
+                <p class="text-white-600 font-bold text-2xl  text-green-800 cursor-pointer">flower</p>
+            </div>
+        
+
+        <div>
+            <!--Menu-->
+            <ul class="flex gap-8">
+                <li class="text-green-700 cursor-pointer">Shop</li>
+                <li class="hover:text-green-700 cursor-pointer">Why us</li>
+                <li class="hover:text-green-700 cursor-pointer">About</li>
+            </ul>
+        </div>
+
+        <div class="relative mr-4">
+            <!--Button-->
+            <button class="bg-green-700 px-5 py-2 text-white rounded-full cursor-pointer">Card</button>
+            <span class="absolute -right-1.5 -top-1.5 bg-black text-white px-1.5 rounded-full">8</span>
+        </div>
+    </div>
+
+    <!-- Breadcrumb-->
+     <div class=" px-30 py-8 hover:text-green-600 hover:cursor-pointer ">
+        <div>
+        <span class="text-gray-400 hover:text-green-600 hover:cursor-pointer ">Home</span>
+        <span class="text-gray-400">/</span>
+        <span class="text-gray-400 hover:text-green-600 hover:cursor-pointer ">Shop</span>
+        <span class="text-gray-400">/</span>
+        <span >All plants</span>
+        </div>
+        <p class="text-[38px] font-bold">All plants</p>
+        <p class="text-gray-500">Browse our full collection of easy-care houseplants.</p>
+     </div>
+    
+    <main class=" flex gap-10  px-30 py-8">
+        <!--Right layout-->
+        <aside class="  bg-white border border-stone-200 p-6 w-[300px] rounded-2xl ">
+            <div class="flex justify-between">
+                <!--Reset-->
+               <p>Filter</p>
+               <button class="text-green-600 hover:underline cursor-pointer mb-5">Clear All</button>
+            </div>
+
+            <div class="flex flex-col mb-5">
+                <!--Search-->
+                <label for="">Search</label>
+                <input type="text" placeholder="Search plants..." class="border border-gray-300 px-1 py-1 focus:border-green-300 focus:outline-none focus:ring-1 focus:ring-green-300 rounded-lg mt-2">
+            </div>
+            <hr class="text-gray-300 mb-4">
+            
+            <div>
+                <!--Category-->
+                <p>Category</p>
+                <div>
+                    <div class="flex justify-between">
+                        <div>
+                        <input type="checkbox" checked class="accent-green-500 cursor-pointer">
+                        <label for="" class="cursor-pointer">Low light</label>
+                        </div>
+                        <span class="text-gray-400">24</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                        <input type="checkbox" class="accent-green-500 cursor-pointer">
+                        <label for="" class="cursor-pointer">Pet Safe</label>
+                        </div>
+                        <span class="text-gray-400">18</span>
+                    </div>
+                    <div class="flex justify-between" class="accent-green-500">
+                        <div>
+                        <input type="checkbox" class="accent-green-500 cursor-pointer">
+                        <label for="" class="cursor-pointer">Hanging</label>
+                        </div>
+                        <span class="text-gray-400" >12</span>
+                    </div>
+                    <div class="flex justify-between mb-3">
+                        <div>
+                        <input type="checkbox" class="accent-green-500 cursor-pointer" >
+                        <label for="" class="cursor-pointer">Air purifying</label>
+                        </div>
+                        <span class="text-gray-400">9</span>
+                    </div>
+                </div>
+            </div> 
+            <div>
+                <p class="mb-2">Price</p>
+                <div class="accent-green-500">
+                    <div class="mb-2">
+                    <input type="radio" id="price" name="any price" value="any price">
+                    <label for="any price">Any price</label> <br>
+                    </div>
+                    <div class="mb-2">
+                    <input type="radio" id="price" name="any price" value="any price">
+                    <label for="any price">Under 20$</label> <br>
+                    </div>
+                    <div class="mb-2">
+                    <input type="radio" id="price" name="any price" value="any price">
+                    <label for="any price">20$-40$</label> <br>
+                    </div>
+                    <div class="mb-2">
+                    <input type="radio" id="price" name="any price" value="any price">
+                    <label for="any price">Over 40$</label> 
+                    </div>
+
+                    <input type="range" class="w-62 mb-5">
+                </div>
+            </div>
+            <hr class="text-gray-300 mb-4">
+ 
+            <div>
+                <!--Size-->
+                <div>
+                    <p class="mb-3">Size</p>
+                </div>
+                <div>
+                    <button class="bg-green-200 px-3 py-0.5 rounded-full text-green-800 border border-green-800 cursor-pointer hover:border-black" >Small</button>
+                    <button class="bg-white px-3 py-0.5 rounded-full text-black border border-gray-300 cursor-pointer hover:border-black" >Medium</button>
+                    <button class="bg-white px-3 py-0.5 rounded-full text-black-100 border border-gray-300 cursor-pointer hover:border-black" >Large</button>
+                </div>
+            </div>
+            <div>
+                <button class="bg-green-500 mt-10 py-2 px-20 rounded-full text-white cursor-pointer hover:border-black">Apply Filter</button>
+            </div>
+        </aside>
+
+        <!--Left layout-->
+        <div class="flex-1"> <!--Flex-1 take all the leftover space next to the sidebar-->
+            <div class="flex justify-between ">
+                <div>
+                   <p>Showning 6 of 63 plants</p>
+                </div>
+                <div>
+                    <label>Sort By</label>
+                    <select class="bor">
+                        <option value="">Most Pouplar</option>
+                        <option value="">Most Pouplar</option>
+                        <option value="">Most Pouplar</option>
+                        <option value="">Most Pouplar</option>
+                    </select>
+                </div>
+            </div>
+            <!--Bage-->
+            <div class="mt-3">
+                <span class="bg-green-200 py-1.5 px-2 rounded-full text-xs text-green-700 cursor-pointer">Low Light <button class="font-bold">x</button></span>
+                <span class="bg-green-200 py-1.5 px-2 rounded-full text-xs text-green-700 cursor-pointer">Small <button class="font-bold">x</button></span>
+            </div>
+
+            <!--Product-->
+            <div class="mt-5 grid grid-cols-3 gap-4">
+                <!--Product1-->
+                <div class="border border-gray-200 rounded-2xl bg-white group overflow-hidden hover:shadow-xl">
+                    <!--Image-->
+                    <div class="relative overflow-hidden">
+                        <img class="h-[200px] w-full group-hover:scale-110  duration-700 transition" src="image copy 7.png">
+                        <span class="absolute top-3 left-2 text-white bg-red-500 text-xs px-2.5 py-1.5 rounded-full">Sale</span>
+                    </div>
+                    <!--Lettle-->
+                    <div class="p-4">
+                        <p>Snake Plant</p>
+                        <span>★★★★★</span>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="">$19</span>
+                                <span class="line-through text-gray-400 text-xs">$24</span>
+                            </div>
+                            <div>
+                            <button class="bg-green-700 border border-green-700 px-4 py-2 rounded-full text-white">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product2-->
+                <div class="border border-gray-200 rounded-2xl bg-white group overflow-hidden hover:shadow-xl">
+                    <!--Image-->
+                    <div class="relative overflow-hidden">
+                        <img class="h-[200px] w-full group-hover:scale-110  duration-700 transition" src="image copy 6.png">
+                    </div>
+                    <!--Lettle-->
+                    <div class="p-4">
+                        <p>Sunflower</p>
+                        <span>★★★★★</span>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>$20</span>
+                            </div>
+                            <div>
+                            <button class="bg-green-700 border border-green-700 px-4 py-2 rounded-full text-white">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product3-->
+                <div class="border border-gray-200 rounded-2xl bg-white group overflow-hidden hover:shadow-xl">
+                    <!--Image-->
+                    <div class="relative overflow-hidden">
+                        <img class="h-[200px] w-full group-hover:scale-110  duration-700 transition" src="image copy 2.png">
+                    </div>
+                    <!--Lettle-->
+                    <div class="p-4">
+                        <p>Rose</p>
+                        <span>★★★★☆</span>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>$24</span>
+                                <span class="line-through text-gray-400 text-xs">$29</span>
+                            </div>
+                            <div>
+                            <button class="bg-green-700 border border-green-700 px-4 py-2 rounded-full text-white">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product4-->
+                <div class="border border-gray-200 rounded-2xl bg-white group overflow-hidden hover:shadow-xl">
+                    <!--Image-->
+                    <div class="relative overflow-hidden">
+                        <img class="h-[200px] w-full group-hover:scale-110  duration-700 transition" src="image copy 3.png">
+                    </div>
+                    <!--Lettle-->
+                    <div class="p-4">
+                        <p>WildFlower</p>
+                        <span>★★★★☆</span>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>$28</span>
+                            </div>
+                            <div>
+                            <button class="bg-green-700 border border-green-700 px-4 py-2 rounded-full text-white">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl bg-white group overflow-hidden hover:shadow-xl">
+                    <!--Image-->
+                    <div class="relative overflow-hidden">
+                        <img class="h-[200px] w-full group-hover:scale-110  duration-700 transition" src="image copy 4.png">
+                        <span class="absolute top-3 left-2 text-white bg-green-600 text-xs px-2.5 py-1.5 rounded-full">New</span>
+                    </div>
+                    <!--Lettle-->
+                    <div class="p-4">
+                        <p>Tulip</p>
+                        <span>★★★★☆</span>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>$25</span>
+                            </div>
+                            <div>
+                            <button class="bg-green-700 border border-green-700 px-4 py-2 rounded-full text-white">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl bg-white group overflow-hidden hover:shadow-xl">
+                    <!--Image-->
+                    <div class="relative overflow-hidden">
+                        <img class="h-[200px] w-full group-hover:scale-110  duration-700 transition" src="image copy 5.png">
+                    </div>
+                    <!--Lettle-->
+                    <div class="p-4">
+                        <p>Seed</p>
+                        <span>★★★★★</span>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>$10</span>
+                            </div>
+                            <div>
+                            <button class="bg-green-700 border border-green-700 px-4 py-2 rounded-full text-white">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-3 mt-5">
+                <span class="border border-gray-400 px-4 py-1 rounded-sm hover:bg-stone-200 cursor-pointer">Prev</span>
+                <span class="border border-green-500 px-4 py-1 rounded-sm bg-green-500 text-white hover:bg-stone-200 cursor-pointer">1</span>
+                <span class="border border-gray-400 px-4 py-1 rounded-sm hover:bg-stone-200 cursor-pointer">2</span>
+                <span class="border border-gray-400 px-4 py-1 rounded-sm hover:bg-stone-200 cursor-pointer">3</span>
+                <span>...</span>
+                <span class="border border-gray-400 px-4 py-1 rounded-sm hover:bg-stone-200 cursor-pointer">8</span>
+                <span class="border border-gray-400 px-4 py-1 rounded-sm hover:bg-stone-200 cursor-pointer">Next</span>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <p class="text-center px-3 py-5 bg-green-400 text-white">© Flower Shop. Built By Tailwind Css</p>
+    </footer>
+  </body>
+</html>
